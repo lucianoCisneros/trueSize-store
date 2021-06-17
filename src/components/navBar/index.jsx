@@ -1,4 +1,5 @@
-import './index.css'
+import './index.css';
+import { CartWidget } from '../CartWidget';
 
 export const NavBar = () => {
     return (
@@ -11,15 +12,17 @@ export const NavBar = () => {
           </div>
 
           <ul className="menu-items">
-            <li><a href="">Inicio</a></li>
-            <li><a href="">Productos</a></li>
-            <li><a href="">Como comprar</a></li>
-            <li><a href="">Contacto</a></li>
+            <li><a>Inicio</a></li>
+            <li><a>Productos</a></li>
+            <li><a>Como Comprar</a></li>
+            <li><a>Contacto</a></li>
           </ul>
 
-          <div>
-            <i><a href=""><img className="carrito" src="/images/carrito.png" alt="carrito" /></a></i>
-          </div>
+          <CartWidget />
+
+          <span className="menu-btn">
+                <i className="fa fa-bars"></i>
+          </span>
 
         </nav>
 
