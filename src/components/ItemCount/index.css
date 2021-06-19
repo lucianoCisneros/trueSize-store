@@ -1,0 +1,25 @@
+.buttons-container {
+    width: 100px;
+    margin: 0 auto;
+}
+
+.decrease, .increase {
+    width: 30px;
+    border: 0px;
+    border-radius: 3px;
+    color: white;
+    background-color: black;
+    cursor: pointer;
+}
+
+.counter {
+    margin: 0 15px 0 15px;
+}
+
+.add-to-cart {
+    padding: 5px 15px 5px 15px;
+    border: 0px;
+    border-radius: 3px;
+    color: white;
+    background-color: black;
+}
