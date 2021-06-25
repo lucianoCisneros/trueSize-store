@@ -11,6 +11,12 @@
     padding-top: 225px;
 }
 
+.sub-title {
+    margin: 0 auto;
+    width: 240px;
+    border-bottom: 2px solid white;
+}
+
 .title, .sub-title {
     color:white;
     filter: drop-shadow(0 4px 3px rgba(0, 0, 0, 1));
@@ -20,11 +26,32 @@
     color: red;
 }
 
+@media (min-width: 425px) {
+    .title {
+        font-size: 30px;
+    }
+    .sub-title {
+        font-size: 20px;
+        width: 256px;
+    }
+}
+
 @media (min-width: 768px) {
     .title {
         font-size: 35px;
     }
     .sub-title {
         font-size: 24px;
+        width: 307px;
+    }
+}
+
+@media (min-width: 1024px) {
+    .title {
+        font-size: 40px;
+    }
+    .sub-title {
+        font-size: 29px;
+        width: 371px;
     }
 }
