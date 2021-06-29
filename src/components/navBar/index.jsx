@@ -1,4 +1,5 @@
 import './index.css';
+import { Link } from 'react-router-dom';
 import { CartWidget } from '../CartWidget';
 
 export const NavBar = () => {
@@ -12,10 +13,10 @@ export const NavBar = () => {
           </div>
 
           <ul className="menu-items">
-            <li><a>Inicio</a></li>
-            <li><a>Productos</a></li>
-            <li><a>Como Comprar</a></li>
-            <li><a>Contacto</a></li>
+            <li><Link to={`/`}>Inicio</Link></li>
+            <li><Link to={`/productos`}>Productos</Link></li>
+            <li>Como Comprar</li>
+            <li>Contacto</li>
           </ul>
 
           <CartWidget />

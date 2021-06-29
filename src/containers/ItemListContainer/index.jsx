@@ -8,12 +8,12 @@ export const ItemListContainer = () => {
 
     useEffect (() => {
         const waitForData = async () => {
-            let data = await getData('sneakers');
+            let data = await getData();
             let aux = data.map(element => {
                 return{
                     title: element.title,
                     price: element.price,
-                    img: element.thumnail
+                    img: element.thumbnail
                 }
             })
             setProducts(aux);
@@ -26,6 +26,9 @@ export const ItemListContainer = () => {
     }
 
     return (
-        <ItemList />
+        <div className='item-list'>
+            <h2>Productos</h2>
+            <ItemList products={products} />
+        </div>
     )
 }

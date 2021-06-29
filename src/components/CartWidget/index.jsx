@@ -4,7 +4,7 @@ export const CartWidget = () => {
     return (
       <>
           <div>
-            <i><a><img className="cart" src="/images/carrito.png" alt="Carrito" /></a></i>
+            <i><img className="cart" src="/images/carrito.png" alt="Carrito" /></i>
           </div>
       </>
     )
