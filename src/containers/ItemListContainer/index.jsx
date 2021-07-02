@@ -2,13 +2,15 @@ import './index.css';
 import { useEffect, useState } from 'react';
 import { getData } from '../../utils/Data';
 import { ItemList } from '../../components/ItemList';
+import { useParams } from 'react-router-dom';
 
 export const ItemListContainer = () => {
     let [products, setProducts] = useState([]);
+    const {categories} = useParams();
 
     useEffect (() => {
         const waitForData = async () => {
-            let data = await getData();
+            let data = await getData({ categories });
             let aux = data.map(element => {
                 return{
                     title: element.title,
@@ -19,7 +21,7 @@ export const ItemListContainer = () => {
             setProducts(aux);
         }
         waitForData();
-    }, [])
+    }, [categories])
 
     if(products.length > 0){
         console.log(products);

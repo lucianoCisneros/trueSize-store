@@ -5,6 +5,7 @@ import { Footer } from './components/Footer';
 import { HomeContainer } from './containers/HomeContainer';
 import { ItemListContainer } from './containers/ItemListContainer'
 import { ItemDetailContainer } from './containers/ItemDetailContainer';
+import { HowToBuyContainer } from './containers/HowToBuyContainer';
 
 function App() {
   return (
@@ -15,8 +16,9 @@ function App() {
 
         <Switch>
          <Route exact path='/' component={HomeContainer} />
-         <Route path='/productos' component={ItemListContainer} />
+         <Route path='/productos/:categories' component={ItemListContainer} />
          <Route path='/producto' component={ItemDetailContainer} />
+         <Route path='/como-comprar' component={HowToBuyContainer} />
          <Route path='*' component={() => <h1>Error: 404</h1>} />
         </Switch>
 

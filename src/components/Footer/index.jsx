@@ -3,21 +3,31 @@ import { Link } from 'react-router-dom';
 
 export const Footer = () => {
     return(
-        <div className='footer-container'>
-            <div>
-                <h4><Link to={`/productos`}>Productos</Link></h4>
-                <ul>
-                    <li>Nike</li>
-                    <li>Jordan</li>
-                    <li>Adidas</li>
-                    <li>Vans</li>
-                </ul>
-            </div>
+        <footer>
+            <div className='footer-container'>
 
-            <div>
-                <i><img src="/images/whatsapp.png" alt="Whatsapp" /></i>
-                <i><img src="/images/instagram.png" alt="Instagram" /></i>
+                <div className='links-container'>
+                    <ul>
+                        <Link to={`/`}><li className='title-link home'>Inicio</li></Link>
+                    </ul>
+
+                    <ul className='products-links'>
+                        <Link to={`/productos/sneakers`}><li className='title-link'>Productos</li></Link>
+                        <Link to={`/productos/nike`}><li className='item-link'>Nike</li></Link>
+                        <Link to={`/productos/jordan`}><li className='item-link'>Jordan</li></Link>
+                        <Link to={`/productos/adidas`}><li className='item-link'>Adidas</li></Link>
+                        <Link to={`/productos/vans`}><li className='item-link'>Vans</li></Link>
+                    </ul>
+                </div>
+
+                <div className='footer-border'></div>
+
+                <div className='icons-container'>
+                    <i className='icon'><img src="/images/whatsapp.png" alt="Whatsapp" /></i>
+                    <i className='icon'><img src="/images/instagram.png" alt="Instagram" /></i>
+                </div>
+
             </div>
-        </div>
+        </footer>
     )
 }

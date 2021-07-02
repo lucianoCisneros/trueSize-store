@@ -12,8 +12,8 @@ export const ItemDetailContainer = () => {
             let aux = data.map(element => {
                 return{
                     title: element.title,
-                    price: element.price,
                     img: element.thumbnail,
+                    price: element.price,
                     description: element.description
                 }
             })

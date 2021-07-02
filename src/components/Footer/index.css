@@ -1,4 +1,54 @@
-.footer-container {
+footer {
     background-color: black;
     border-top: 3px solid red;
+}
+
+.title-link {
+    color: white;
+    border-bottom: 2px solid red;
+}
+
+.item-link {
+    color: white;
+}
+
+.item-link:hover {
+    color: red;
+}
+
+.icons-container {
+    margin-top: 50px;
+}
+
+.icon {
+    margin-left: 15px;
+}
+
+.footer-border {
+    height: 100px;
+    margin: 0 auto;
+    margin-top: 20px;
+}
+
+@media (min-width: 425px){
+    footer {
+        height: 150px;
+    }
+
+    .footer-container {
+        display: inline-flex;
+        justify-content: space-around;
+    }
+
+    .footer-border {
+        border-right: 2px solid white;
+    }
+
+    .links-container {
+        display: inline-flex;
+    }
+
+    .home {
+        margin-right: 10px;
+    }
 }

@@ -9,14 +9,14 @@ export const NavBar = () => {
         <nav className="menu">
 
           <div>
-            <img src="/images/LogoWeb.png" className="menu-logo" alt="Logo" />
+            <Link to={`/`}><img src="/images/LogoWeb.png" className="menu-logo" alt="Logo" /></Link>
           </div>
 
           <ul className="menu-items">
-            <li><Link to={`/`}>Inicio</Link></li>
-            <li><Link to={`/productos`}>Productos</Link></li>
-            <li>Como Comprar</li>
-            <li>Contacto</li>
+            <Link to={`/`}><li className='menu-item'>Inicio</li></Link>
+            <Link to={`/productos/sneakers`}><li className='menu-item'>Productos</li></Link>
+            <Link to={`/como-comprar`}><li className='menu-item'>Como Comprar</li></Link>
+            <li className='menu-item'>Contacto</li>
           </ul>
 
           <CartWidget />
