@@ -16,7 +16,7 @@ export const NavBar = () => {
             <Link to={`/`}><li className='menu-item'>Inicio</li></Link>
             <Link to={`/productos/sneakers`}><li className='menu-item'>Productos</li></Link>
             <Link to={`/como-comprar`}><li className='menu-item'>Como Comprar</li></Link>
-            <li className='menu-item'>Contacto</li>
+            <Link to={`/contacto`}><li className='menu-item'>Contacto</li></Link>
           </ul>
 
           <CartWidget />

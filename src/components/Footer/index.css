@@ -1,19 +1,19 @@
 footer {
     background-color: black;
-    border-top: 3px solid red;
 }
 
 .title-link {
     color: white;
-    border-bottom: 2px solid red;
+    border-bottom: 2px solid #D32B29;
 }
 
 .item-link {
     color: white;
+    text-align: left;
 }
 
 .item-link:hover {
-    color: red;
+    color: #D32B29;
 }
 
 .icons-container {
@@ -44,8 +44,13 @@ footer {
         border-right: 2px solid white;
     }
 
+    .title-link {
+        margin-right: 15px;
+    }
+
     .links-container {
         display: inline-flex;
+        margin-top: 10px;
     }
 
     .home {

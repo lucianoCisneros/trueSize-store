@@ -14,7 +14,7 @@
 .sub-title {
     margin: 0 auto;
     width: 240px;
-    border-bottom: 2px solid white;
+    border-bottom: 2px solid #D32B29;
 }
 
 .title, .sub-title {
@@ -23,7 +23,7 @@
 }
 
 .dot {
-    color: red;
+    color: #D32B29;
 }
 
 @media (min-width: 425px) {

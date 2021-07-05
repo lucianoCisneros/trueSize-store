@@ -1,0 +1,49 @@
+.contact-container {
+    background-color: #263238;
+}
+
+.contact-title {
+    color: white;
+}
+
+form {
+    display: grid;
+    grid-template-columns: repeat(1, 1fr);
+    width: 250px;
+    margin: 0 auto;
+}
+
+input {
+    border: none;
+    border-bottom: 2px solid white;
+    background-color: #263238;
+}
+
+textarea {
+    border: none;
+    border-bottom: 2px solid white;
+    background-color: #263238;
+}
+
+.buttons-container {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    margin-top: 10px;
+}
+
+button {
+    border: 2px solid white;
+    color: white;
+    cursor: pointer;
+    height: 30px;
+    border-radius: 2px;
+    background-color: #263238;
+}
+
+#send {
+    margin-right: 5px;
+}
+
+#delete {
+    margin-left: 5px;
+}

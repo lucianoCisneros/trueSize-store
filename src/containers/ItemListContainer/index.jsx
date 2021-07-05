@@ -6,7 +6,7 @@ import { useParams } from 'react-router-dom';
 
 export const ItemListContainer = () => {
     let [products, setProducts] = useState([]);
-    const {categories} = useParams();
+    const { categories } = useParams();
 
     useEffect (() => {
         const waitForData = async () => {
@@ -29,7 +29,7 @@ export const ItemListContainer = () => {
 
     return (
         <div className='item-list'>
-            <h2>Productos</h2>
+            <h2 className='title-products'>Productos</h2>
             <ItemList products={products} />
         </div>
     )

@@ -6,6 +6,7 @@ import { HomeContainer } from './containers/HomeContainer';
 import { ItemListContainer } from './containers/ItemListContainer'
 import { ItemDetailContainer } from './containers/ItemDetailContainer';
 import { HowToBuyContainer } from './containers/HowToBuyContainer';
+import { ContactContainer } from './containers/ContactContainer';
 
 function App() {
   return (
@@ -19,6 +20,7 @@ function App() {
          <Route path='/productos/:categories' component={ItemListContainer} />
          <Route path='/producto' component={ItemDetailContainer} />
          <Route path='/como-comprar' component={HowToBuyContainer} />
+         <Route path='/contacto' component={ContactContainer} />
          <Route path='*' component={() => <h1>Error: 404</h1>} />
         </Switch>
 

@@ -21,7 +21,7 @@
 }
 
 .menu-items li:hover {
-  color: red;
+  color: #D32B29;
   cursor: pointer;
 }
 

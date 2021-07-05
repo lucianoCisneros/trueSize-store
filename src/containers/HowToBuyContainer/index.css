@@ -1,3 +1,97 @@
 .dot {
-    color: red;
+    color: #D32B29;
+}
+
+
+.container-content {
+    background-color: #263238;
+    padding: 20px 0 20px 0;
+}
+
+.title-howToBuy {
+    color: white;
+    filter: drop-shadow(0 4px 3px rgba(0, 0, 0, 1));
+}
+
+.texto {
+    text-align: left;
+    color: white;
+    margin: 5px 20px 15px 20px;
+}
+
+.logo {
+    width: 200px;
+    border-radius: 5px;
+    margin: 0 auto;
+    margin-top: 20px;
+}
+
+.border-bottom {
+    border-bottom: 2px solid white;
+}
+
+@media (min-width: 425px){
+    .texto {
+        color: white;
+        margin-left: 30px;
+        margin-right: 30px;
+        font-size: 18px;
+    }
+
+    .logo {
+        width: 220px;
+    }
+}
+
+@media (min-width: 768px){
+    .container-content {
+        display: inline-flex;
+    }
+    
+    .texto {
+        color: white;
+        margin: 5px 30px 15px 30px;
+    }
+
+    .logo {
+        margin-top: 100px;
+        width: 200px;
+        margin-right: 30px;
+    }
+}
+
+@media (min-width: 1024px){
+    .container-content {
+        height: 450px;
+        padding-top: 60px;
+    }
+    
+    .texto {
+        font-size: 18px;
+        margin: 5px 40px 0 40px;
+    }
+
+    .logo {
+        margin-top: 60px;
+        margin-right: 40px;
+        width: 220px;
+    }
+}
+
+@media (min-width: 1440px){
+    .container-content {
+        height: 570px;
+        padding: 90px 0 20px 0;
+    }
+    
+    .texto {
+        font-size: 20px;
+        margin: 5px 60px 0 60px;
+    }
+
+    .logo {
+        margin-top: 45px;
+        margin-right: 60px;
+        width: 270px;
+    }
 }
