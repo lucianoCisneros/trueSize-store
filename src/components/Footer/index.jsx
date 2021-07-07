@@ -7,9 +7,9 @@ export const Footer = () => {
             <div className='footer-container'>
 
                 <div className='links-container'>
-                    <ul>
+                    <div>
                         <Link to={`/`}><li className='title-link'>Inicio</li></Link>
-                    </ul>
+                    </div>
 
                     <ul className='products-links'>
                         <Link to={`/productos/sneakers`}><li className='title-link'>Productos</li></Link>
@@ -19,9 +19,13 @@ export const Footer = () => {
                         <Link to={`/productos/vans`}><li className='item-link'>Vans</li></Link>
                     </ul>
 
-                    <ul>
+                    <div>
                         <Link to={`/como-comprar`}><li className='title-link'>Como Comprar</li></Link>
-                    </ul>
+                    </div>
+
+                    <div>
+                        <Link to={`/contacto`}><li className='title-link'>Contacto</li></Link>
+                    </div>
                 </div>
 
                 <div className='footer-border'></div>

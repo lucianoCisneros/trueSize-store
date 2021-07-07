@@ -25,7 +25,7 @@ textarea {
     background-color: #263238;
 }
 
-.buttons-container {
+.button-container {
     display: grid;
     grid-template-columns: repeat(2, 1fr);
     margin-top: 10px;

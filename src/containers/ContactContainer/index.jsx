@@ -11,7 +11,7 @@ export const ContactContainer = () => {
                     <input type='email' placeholder='E-mail' />
                     <input type='number' placeholder='Telefono' />
                     <textarea placeholder='Consulta'></textarea>
-                    <div className='buttons-container'>
+                    <div className='button-container'>
                         <button type='submit' id='send'>Enviar</button>
                         <button type='reset' id='delete'>Borrar</button>
                     </div>
