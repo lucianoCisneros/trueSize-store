@@ -1,9 +1,13 @@
 .contact-container {
     background-color: #263238;
+    padding: 50px 0 60px 0;
 }
 
 .contact-title {
     color: white;
+    margin-bottom: 20px;
+    border-bottom: 2px solid #D32B29;
+    filter: drop-shadow(0 4px 3px rgba(0, 0, 0, 1));
 }
 
 form {
@@ -17,12 +21,21 @@ input {
     border: none;
     border-bottom: 2px solid white;
     background-color: #263238;
+    font-size: 16px;
+    margin-bottom: 20px;
+    color: white;
 }
 
 textarea {
     border: none;
     border-bottom: 2px solid white;
     background-color: #263238;
+    font-size: 16px;
+    height: 120px;
+    width: 250px;
+    margin-bottom: 20px;
+    color: white;
+    resize: none;
 }
 
 .button-container {
@@ -31,13 +44,15 @@ textarea {
     margin-top: 10px;
 }
 
-button {
+.contact-button {
     border: 2px solid white;
     color: white;
     cursor: pointer;
-    height: 30px;
+    height: 35px;
     border-radius: 2px;
     background-color: #263238;
+    margin-bottom: 20px;
+    font-size: 16px;
 }
 
 #send {

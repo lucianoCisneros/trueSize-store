@@ -1,36 +1,37 @@
 import './index.css';
-import { useEffect, useState } from 'react';
-import { getData } from '../../utils/Data';
+import { useContext, useEffect, useState } from 'react';
 import { ItemList } from '../../components/ItemList';
 import { useParams } from 'react-router-dom';
-
+import { ProductsContext } from '../../contexts/ProductsContext';
 export const ItemListContainer = () => {
-    let [products, setProducts] = useState([]);
+    const { listProducts } = useContext(ProductsContext);
+    const [brandProducts, setBrandProducts] = useState([]);
     const { categories } = useParams();
+    let products = [];
 
     useEffect (() => {
-        const waitForData = async () => {
-            let data = await getData({ categories });
-            let aux = data.map(element => {
-                return{
+        const waitForData = () => {
+            let filterBrand = listProducts.results.filter(products => products.attributes[0].value_name === categories)
+            console.log(filterBrand);
+            const products = filterBrand.map(element => {
+                console.log(element);
+                return {
+                    id: element.id,
                     title: element.title,
+                    brand: element.attributes[0].value_name,
                     price: element.price,
                     img: element.thumbnail
                 }
             })
-            setProducts(aux);
+            setBrandProducts(products);
         }
         waitForData();
-    }, [categories])
-
-    if(products.length > 0){
-        console.log(products);
-    }
-
+    }, [categories, listProducts]);
+    
     return (
         <div className='item-list'>
             <h2 className='title-products'>Productos</h2>
-            <ItemList products={products} />
+            <ItemList products={brandProducts} />
         </div>
     )
 }

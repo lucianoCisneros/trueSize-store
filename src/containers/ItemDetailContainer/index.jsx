@@ -1,33 +1,21 @@
 import './index.css';
-import { useEffect, useState } from 'react';
-import { getProduct } from '../../utils/Data';
+import { useContext, useEffect, useState } from 'react';
 import { ItemDetail } from '../../components/ItemDetail';
 import { useParams } from 'react-router-dom';
+import { ProductsContext } from '../../contexts/ProductsContext';
 
 export const ItemDetailContainer = () => {
+    const { listProducts } = useContext(ProductsContext);
     let [product, setProduct] = useState([]);
     const { id } = useParams();
 
     useEffect (() => {
         const waitForData = async () => {
-            let data = await getProduct();
-            let aux = data.map(element => {
-                return{
-                    id: element.id,
-                    title: element.title,
-                    img: element.thumbnail,
-                    price: element.price,
-                    description: element.description
-                }
-            })
-            setProduct(aux);
+            let findId = listProducts.results.find(product => product.id === id);
+            setProduct(findId);
         }
         waitForData();
-    }, [{ id }])
-
-    if(product.length > 0){
-        console.log(product);
-    }
+    }, [ id ])
 
     return (
         <>

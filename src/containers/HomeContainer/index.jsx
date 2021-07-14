@@ -1,12 +1,6 @@
 import './index.css';
-import { useContext } from 'react';
-import { ShopContext } from '../../contexts/ShopContext';
-
 
 export const HomeContainer = () => {
-    const estadoGlobal = useContext(ShopContext);
-    console.log(estadoGlobal);
-
     return (
         <>
             <section className="banner">

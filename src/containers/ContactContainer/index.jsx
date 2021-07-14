@@ -6,14 +6,14 @@ export const ContactContainer = () => {
             <div className='contact-container'>
                 <form action=''>
                     <h2 className='contact-title'>Contacto</h2>
-                    <input type='text' placeholder='Nombre' />
-                    <input type='text' placeholder='Apellido' />
-                    <input type='email' placeholder='E-mail' />
-                    <input type='number' placeholder='Telefono' />
-                    <textarea placeholder='Consulta'></textarea>
+                    <input className='contact-input' type='text' placeholder='Nombre' />
+                    <input className='contact-input' type='text' placeholder='Apellido' />
+                    <input className='contact-input' type='email' placeholder='E-mail' />
+                    <input className='contact-input' type='number' placeholder='Telefono' />
+                    <textarea className='contact-text' placeholder='Consulta'></textarea>
                     <div className='button-container'>
-                        <button type='submit' id='send'>Enviar</button>
-                        <button type='reset' id='delete'>Borrar</button>
+                        <button className='contact-button' type='submit' id='send'>Enviar</button>
+                        <button className='contact-button' type='reset' id='delete'>Borrar</button>
                     </div>
                 </form>
             </div>

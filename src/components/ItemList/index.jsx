@@ -9,7 +9,7 @@ export const ItemList = ({ products }) => {
               ? products.map((element, index) => {
                 return (
                   <span key={index}>
-                    <Item title={element.title} price={element.price} img={element.img} />
+                    <Item id={element.id} title={element.title} price={element.price} img={element.img} />
                   </span>
                 )
               })

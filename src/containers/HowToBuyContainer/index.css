@@ -10,13 +10,16 @@
 
 .title-howToBuy {
     color: white;
+    border-bottom: 2px solid #D32B29;
+    width: 200px;
     filter: drop-shadow(0 4px 3px rgba(0, 0, 0, 1));
+    margin: 0 auto;
 }
 
 .texto {
     text-align: left;
     color: white;
-    margin: 5px 20px 15px 20px;
+    margin: 0px 20px 15px 20px;
 }
 
 .logo {
@@ -30,7 +33,18 @@
     border-bottom: 2px solid white;
 }
 
+@media (min-width: 320px){
+    .title-howToBuy {
+        width: 233px;
+    }
+}
+
 @media (min-width: 425px){
+    .title-howToBuy {
+        font-size: 27px;
+        width: 262px;
+    }
+
     .texto {
         color: white;
         margin-left: 30px;
@@ -79,6 +93,11 @@
 }
 
 @media (min-width: 1440px){
+    .title-howToBuy {
+        font-size: 30px;
+        width: 292px;
+    }
+
     .container-content {
         height: 570px;
         padding: 90px 0 20px 0;

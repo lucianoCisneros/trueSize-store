@@ -1,7 +1,5 @@
 .item-list {
-    background-image: url('https://i.ibb.co/hMLrGC5/fondo-Ladrillo.png');
-    background-position: center center;
-    position: relative;
+    background-color: #263238;
 }
 
 .title-products {
@@ -10,7 +8,7 @@
     width: 100px;
     padding-top: 20px;
     margin-bottom: 20px;
-    border-bottom: 2px solid white;
+    border-bottom: 2px solid #D32B29;
     filter: drop-shadow(0 4px 3px rgba(0, 0, 0, 1));
 }
 
