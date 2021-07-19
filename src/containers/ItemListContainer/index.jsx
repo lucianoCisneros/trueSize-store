@@ -7,14 +7,12 @@ export const ItemListContainer = () => {
     const { listProducts } = useContext(ProductsContext);
     const [brandProducts, setBrandProducts] = useState([]);
     const { categories } = useParams();
-    let products = [];
 
     useEffect (() => {
         const waitForData = () => {
             let filterBrand = listProducts.results.filter(products => products.attributes[0].value_name === categories)
-            console.log(filterBrand);
+
             const products = filterBrand.map(element => {
-                console.log(element);
                 return {
                     id: element.id,
                     title: element.title,

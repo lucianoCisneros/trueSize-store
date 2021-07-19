@@ -9,29 +9,32 @@ import { HowToBuyContainer } from './containers/HowToBuyContainer';
 import { ContactContainer } from './containers/ContactContainer';
 import { CartContainer } from './containers/CartContainer';
 import { ProductsContext, ProductsComponentContext } from './contexts/ProductsContext';
+import { CartComponentContext } from './contexts/CartContext';
 
 function App() {
   return (
     <div className="App">
-      <ProductsComponentContext>
-        <BrowserRouter>
+      <CartComponentContext>
+        <ProductsComponentContext>
+          <BrowserRouter>
 
-          <NavBar />
+            <NavBar />
 
-          <Switch>
-            <Route exact path='/' component={HomeContainer} />
-            <Route path='/productos/:categories' component={ItemListContainer} />
-            <Route path='/producto/:id' component={ItemDetailContainer} />
-            <Route path='/como-comprar' component={HowToBuyContainer} />
-            <Route path='/contacto' component={ContactContainer} />
-            <Route path='/carrito' component={CartContainer} />
-            <Route path='*' component={() => <h1>Error: 404</h1>} />
-          </Switch>
+            <Switch>
+              <Route exact path='/' component={HomeContainer} />
+              <Route path='/productos/:categories' component={ItemListContainer} />
+              <Route path='/producto/:id' component={ItemDetailContainer} />
+              <Route path='/como-comprar' component={HowToBuyContainer} />
+              <Route path='/contacto' component={ContactContainer} />
+              <Route path='/carrito' component={CartContainer} />
+              <Route path='*' component={() => <h1>Error: 404</h1>} />
+            </Switch>
 
-          <Footer />
+            <Footer />
 
-        </BrowserRouter>
-      </ProductsComponentContext>
+          </BrowserRouter>
+        </ProductsComponentContext>
+      </CartComponentContext>
     </div>
   );
 }

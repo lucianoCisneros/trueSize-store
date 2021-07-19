@@ -10,12 +10,12 @@ export const ItemDetailContainer = () => {
     const { id } = useParams();
 
     useEffect (() => {
-        const waitForData = async () => {
+        const waitForData = () => {
             let findId = listProducts.results.find(product => product.id === id);
             setProduct(findId);
         }
         waitForData();
-    }, [ id ])
+    }, [ id, listProducts ])
 
     return (
         <>

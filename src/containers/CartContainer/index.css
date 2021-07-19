@@ -1,0 +1,35 @@
+.cart-container {
+    background-color: #263238;
+    min-height: 450px;
+}
+
+.cart-title {
+    width: 67px;
+    padding-top: 20px;
+    margin: 0 auto;
+    color: white;
+    filter: drop-shadow(0 4px 3px rgba(0, 0, 0, 1));
+    border-bottom: 2px solid #D32B29;
+}
+
+.cart-empty {
+    padding-top: 150px;
+    font-size: 20px;
+    color: white;
+}
+
+.cart-button {
+    background-color: #263238;
+    border: 2px solid white;
+    color: white;
+    cursor: pointer;
+    padding: 2px 20px 2px 20px;
+    border-radius: 2px;
+    font-size: 16px;
+    margin-bottom: 20px;
+}
+
+.cart-total {
+    color: white;
+    font-weight: 400;
+}

@@ -9,7 +9,7 @@ export const ContactContainer = () => {
                     <input className='contact-input' type='text' placeholder='Nombre' />
                     <input className='contact-input' type='text' placeholder='Apellido' />
                     <input className='contact-input' type='email' placeholder='E-mail' />
-                    <input className='contact-input' type='number' placeholder='Telefono' />
+                    <input className='contact-input' type='tel' placeholder='Telefono' />
                     <textarea className='contact-text' placeholder='Consulta'></textarea>
                     <div className='button-container'>
                         <button className='contact-button' type='submit' id='send'>Enviar</button>

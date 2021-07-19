@@ -13,8 +13,8 @@ export const Footer = () => {
 
                     <ul className='products-links'>
                         <Link to={`/productos/sneakers`}><li className='title-link'>Productos</li></Link>
-                        <Link to={`/productos/Nike`}><li className='item-link'>Nike</li></Link>
                         <Link to={`/productos/Jordan`}><li className='item-link'>Jordan</li></Link>
+                        <Link to={`/productos/Nike`}><li className='item-link'>Nike</li></Link>
                         <Link to={`/productos/Adidas`}><li className='item-link'>Adidas</li></Link>
                         <Link to={`/productos/Vans`}><li className='item-link'>Vans</li></Link>
                     </ul>
