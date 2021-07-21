@@ -1,6 +1,5 @@
 import './index.css';
 import { useContext } from "react";
-import { Link } from 'react-router-dom';
 import { CartContext } from '../../contexts/CartContext';
 import { CartItem } from '../../components/CartItem';
 

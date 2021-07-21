@@ -10,10 +10,12 @@ footer {
 .item-link {
     color: white;
     text-align: left;
+    transition: .3s;
 }
 
 .item-link:hover {
     color: #D32B29;
+    transition: .3s;
 }
 
 .icons-container {

@@ -33,3 +33,9 @@
     color: white;
     font-weight: 400;
 }
+
+@media (min-width: 425px){
+    .cart-container {
+        min-height: 600px;
+    }
+}
