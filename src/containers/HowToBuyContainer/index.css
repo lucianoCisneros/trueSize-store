@@ -2,7 +2,6 @@
     color: #D32B29;
 }
 
-
 .container-content {
     background-color: #263238;
     padding: 20px 0 20px 0;
@@ -14,12 +13,14 @@
     width: 200px;
     filter: drop-shadow(0 4px 3px rgba(0, 0, 0, 1));
     margin: 0 auto;
+    font-weight: 400;
 }
 
 .texto {
     text-align: left;
     color: white;
     margin: 0px 20px 15px 20px;
+    font-weight: 400;
 }
 
 .logo {

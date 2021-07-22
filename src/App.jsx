@@ -8,7 +8,7 @@ import { ItemDetailContainer } from './containers/ItemDetailContainer';
 import { HowToBuyContainer } from './containers/HowToBuyContainer';
 import { ContactContainer } from './containers/ContactContainer';
 import { CartContainer } from './containers/CartContainer';
-import { ProductsContext, ProductsComponentContext } from './contexts/ProductsContext';
+import { ProductsComponentContext } from './contexts/ProductsContext';
 import { CartComponentContext } from './contexts/CartContext';
 
 function App() {
@@ -22,7 +22,7 @@ function App() {
 
             <Switch>
               <Route exact path='/' component={HomeContainer} />
-              <Route path='/productos/:categories' component={ItemListContainer} />
+              <Route path='/productos/:brand' component={ItemListContainer} />
               <Route path='/producto/:id' component={ItemDetailContainer} />
               <Route path='/como-comprar' component={HowToBuyContainer} />
               <Route path='/contacto' component={ContactContainer} />

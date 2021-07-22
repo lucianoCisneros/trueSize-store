@@ -1,29 +1,26 @@
 .banner {
-    background-image: url(https://i.imgur.com/CBXQufO.png);
+    background-image: url(https://i.ibb.co/6Z5dHtY/banner.jpg);
     background-size: cover;
     background-repeat: no-repeat;
     background-position: center center;
     position: relative;
-    height: 555px;
+    height: 490px;
+    text-align: right;
 }
 
 .title {
-    padding-top: 225px;
+    padding-top: 455px;
+    font-weight: 600;
 }
 
 .sub-title {
-    margin: 0 auto;
-    width: 240px;
-    border-bottom: 2px solid #D32B29;
+    font-weight: 500;
 }
 
 .title, .sub-title {
-    color:white;
-    filter: drop-shadow(0 4px 3px rgba(0, 0, 0, 1));
-}
-
-.dot {
-    color: #D32B29;
+    color:black;
+    display: none;
+    margin-right: 65px;
 }
 
 .aboutUs-container {
@@ -41,23 +38,26 @@
 
 
 @media (min-width: 425px) {
-    .title {
-        font-size: 30px;
-    }
-    .sub-title {
-        font-size: 20px;
-        width: 256px;
+    .banner {
+        height: 510px;
     }
 }
 
 @media (min-width: 768px) {
+    .banner {
+        height: 615px;
+    }
+
     .title {
         font-size: 35px;
     }
 
     .sub-title {
         font-size: 24px;
-        width: 307px;
+    }
+    
+    .title, .sub-title {
+        display: block;
     }
 
     .aboutUs-container {
@@ -84,7 +84,6 @@
 
     .sub-title {
         font-size: 29px;
-        width: 371px;
     }
 
     .aboutUs-img {
@@ -93,6 +92,19 @@
 }
 
 @media (min-width: 1440px){
+    .banner {
+        height: 770px;
+    }
+
+    .title {
+        font-size: 45px;
+        padding-top: 150px;
+    }
+
+    .sub-title {
+        font-size: 34px;
+    }
+
     .aboutUs-img {
         width: 100px;
     }

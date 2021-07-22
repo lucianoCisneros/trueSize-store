@@ -10,6 +10,7 @@
     margin-bottom: 20px;
     border-bottom: 2px solid #D32B29;
     filter: drop-shadow(0 4px 3px rgba(0, 0, 0, 1));
+    font-weight: 400;
 }
 
 @media (min-width: 768px) {

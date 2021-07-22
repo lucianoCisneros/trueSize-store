@@ -10,6 +10,7 @@
     color: white;
     filter: drop-shadow(0 4px 3px rgba(0, 0, 0, 1));
     border-bottom: 2px solid #D32B29;
+    font-weight: 400;
 }
 
 .cart-empty {

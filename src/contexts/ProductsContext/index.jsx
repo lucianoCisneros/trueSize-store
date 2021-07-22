@@ -1,34 +1,24 @@
 import { createContext, useEffect, useState } from "react";
+import { getFireStore } from '../../firebase/client';
 
 export const ProductsContext = createContext();
 
 export const ProductsComponentContext = ({children}) => {
     const [listProducts, setListProducts] = useState([]);
-    const [cart, setCart] = useState([]);
-    
-    useEffect(() => {
-        async function getData (){
-            const response = await fetch(`https://api.mercadolibre.com/sites/MLA/search?q=sneakers`);
-            const data = await response.json();
-            setListProducts(data);
-        }
-        getData();
-    }, []);
 
-    const addToCart = async (newProd, counter) => {
-        const itemCart = {...newProd, cantidad: counter}
-        if (cart){
-            cart.map(item => {
-                if(item.id === itemCart.id){
-                    item.cantidad = item.cantidad + itemCart.cantidad;
-                }
-            })
-        }
-        await setCart(cart => [...cart, itemCart])
-    }
+    useEffect(() => {
+        const DB = getFireStore();
+        const COLLECTION = DB.collection('products');
+        COLLECTION.get().then(response => {
+            if(response.size === 0){
+                console.log('No hay resultado en la base de datos!');
+            }
+            setListProducts(response.docs.map(element => {return {id: element.id, ...element.data()}}));
+        })
+    }, []);
     
     return (
-    <ProductsContext.Provider value={{listProducts, setListProducts, addToCart}}>
+    <ProductsContext.Provider value={{ listProducts }}>
         {children}
     </ProductsContext.Provider>
     )

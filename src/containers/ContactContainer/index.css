@@ -8,6 +8,7 @@
     margin-bottom: 20px;
     border-bottom: 2px solid #D32B29;
     filter: drop-shadow(0 4px 3px rgba(0, 0, 0, 1));
+    font-weight: 400;
 }
 
 form {
@@ -45,7 +46,7 @@ textarea {
 }
 
 .contact-button {
-    border: 2px solid #D32B29;
+    border: 2px solid white;
     color: white;
     cursor: pointer;
     height: 35px;
@@ -53,6 +54,13 @@ textarea {
     background-color: #263238;
     margin-bottom: 20px;
     font-size: 16px;
+    transition: .4s;
+}
+
+.contact-button:hover {
+    background-color: #D32B29;
+    border: 2px solid #D32B29;
+    transition: .4s;
 }
 
 #send {

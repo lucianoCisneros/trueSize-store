@@ -1,21 +1,41 @@
 .item {
     width: 280px;
-    height: 300px;
+    height: 330px;
     margin: 0 auto;
-    margin-bottom: 20px;
-    border-radius: 10px;
+    margin-bottom: 40px;
+    border-radius: 5px;
     background-color: white;
     filter: drop-shadow(0 4px 3px rgba(0, 0, 0, 1));
 }
 
+.item-img-container {
+    height: 210px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    border-bottom: 2px solid lightgray;
+}
+
 .item-img {
-    width: 200px;
-    margin: 0 auto;
-    margin-top: 10px;
+    width: 230px;
     border-radius: 5px;
 }
 
+.item-data-container {
+    width: 230px;
+    margin: auto;
+    text-align: left;
+    margin-top: 5px;
+}
+
 .item-title {
-    font-size: 16px;
+    font-size: 20px;
+    font-weight: 400;
+    color: black;
+}
+
+.item-price {
+    font-size: 26px;
+    color: black;
 }
 

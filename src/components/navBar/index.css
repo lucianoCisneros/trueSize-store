@@ -18,13 +18,14 @@
     margin-right: 35px;
     color: white;
     font-weight: 500; 
-    transition: .3s;
+    transition: .4s;
+    font-size: 17px;
 }
 
 .menu-items li:hover {
   color: #D32B29;
   cursor: pointer;
-  transition: .3s;
+  transition: .4s;
 }
 
 .menu-logo {

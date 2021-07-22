@@ -11,7 +11,7 @@ export const ItemDetailContainer = () => {
 
     useEffect (() => {
         const waitForData = () => {
-            let findId = listProducts.results.find(product => product.id === id);
+            let findId = listProducts.find(product => product.id === id);
             setProduct(findId);
         }
         waitForData();

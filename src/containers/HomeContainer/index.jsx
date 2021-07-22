@@ -4,8 +4,8 @@ export const HomeContainer = () => {
     return (
         <>
             <section className="banner">
-                <h1 className="title">Bienvenido a True<span className="dot">.</span>Size Store</h1>
-                <h3 className="sub-title">Tienda de Sneakers & Streetwear</h3>
+                <h1 className="title">True<span className="dot">.</span>Size Store</h1>
+                <h3 className="sub-title">Sneakers & Streetwear</h3>
             </section>
 
             <section>
@@ -13,13 +13,13 @@ export const HomeContainer = () => {
                     <div className='aboutUs-item'>
                         <img className='aboutUs-img' src="/images/vip.png" alt="" />
                         <h2 className='aboutUs-title'>EXCLUSIVIDAD<span className='dot'>.</span></h2>
-                        <p className='aboutUs-data'>Conseguimos los modelos más exlusivos del mercado.</p>
+                        <p className='aboutUs-data'>Los modelos más exlusivos del mercado.</p>
                     </div>
 
                     <div className='aboutUs-item'>
                         <img className='aboutUs-img' src="/images/pedidos.png" alt="" />
                         <h2 className='aboutUs-title'>PEDIDOS<span className='dot'>.</span></h2>
-                        <p className='aboutUs-data'>Los pedidos tardan 30 días aproximadamente.</p>
+                        <p className='aboutUs-data'>Estos tardan 30 días aproximadamente.</p>
                     </div>
 
                     <div className='aboutUs-item'>

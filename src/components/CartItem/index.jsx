@@ -10,10 +10,10 @@ export const CartItem = ( {cartProduct, onQuitar} ) => {
   return (
     <div className='cartItem-container'>
         <div>
-            <img className='cartItem-img' src={ cartProduct.itemList.thumbnail } alt="" />
+            <img className='cartItem-img' src={ cartProduct.itemList.img } alt="" />
         </div>
         <div>
-            <h3 className='cartItem-title'>{ cartProduct.itemList.title }</h3>
+            <h3 className='cartItem-title'>{ cartProduct.itemList.name }</h3>
             <div className='cartItem-data'>
               <p className='cartItem-quantity data'>Cantidad: {cartProduct.cantidad}</p>
               <p className='cartItem-price data'>Precio: ${cartProduct.itemList.price}</p>

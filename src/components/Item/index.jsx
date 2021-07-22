@@ -7,10 +7,16 @@ export const Item = ({id, title, price, img}) => {
         <>
                 <div className='item'>
                     <Link to={`/producto/${id}`}>
-                        <img src={img} className='item-img' alt="Producto" />
+                    <div className='item-img-container'>
+                        
+                            <img src={img} className='item-img' alt="Producto" />
+                        
+                    </div>
+                    <div className='item-data-container'>
+                        <p className='item-price'>${price}</p>
+                        <h2 className='item-title'>{title}</h2>
+                    </div>
                     </Link>
-                    <h2 className='item-title'>{title}</h2>
-                    <strong className='item-price'>${price}</strong>
                 </div>
         </>
     )

@@ -1,3 +1,15 @@
+.product-detail-container {
+    background-color: #263238;
+    height: 500px;
+}
+
+.product-container {
+    background-color: white;
+    border-radius: 5px;
+    margin: 40px 20px 40px 20px;
+    padding: 40px 0 40px 0;
+}
+
 .product-title {
     font-size: 18px;
     margin: 0 auto;
@@ -5,9 +17,10 @@
 }
 
 .product-img {
-    width: 270px;
+    width: 250px;
     margin: 0 auto;
     margin-top: 10px;
+    border-radius: 5px;
 }
 
 .shop-button {
@@ -19,44 +32,53 @@
     background-color: black;
 }
 
-@media (min-width: 768px){
-    .product-container {
-        display: grid;
-        grid-template-columns: repeat(2, 1fr);
-    }
-
-    .principal-container {
-        margin-left: 40px;
-    }
-
-    .secondary-container {
-        margin-top: 100px;
-    }
-
-    .product-title {
-        font-size: 19px;
-    }
-
+@media (min-width: 425px){
     .product-img {
         width: 300px;
     }
 
+    .product-title {
+        font-size: 22px;
+    }
+
     .product-price {
-        font-size: 20px;
+        font-size: 22px;
+    }
+}
+
+@media (min-width: 768px){
+    .product-container {
+        display: grid;
+        grid-template-columns: repeat(2, 1fr);
+        width: 700px;
+        margin: auto;
+        margin-top: 40px;
+    }
+
+    .img-container {
+        margin-left: 40px;
+    }
+
+    .product-title {
+        font-size: 24px;
+    }
+
+    .product-img {
+        width: 350px;
+    }
+
+    .product-price {
+        font-size: 24px;
     }
 }
 
 @media (min-width: 1024px){
-    .principal-container {
-        margin-left: 60px;
-    }
-
-    .secondary-container {
-        margin-top: 100px;
+    .product-container {
+        width: 750px;
     }
 
     .product-title {
-        font-size: 22px;
+        font-size: 26px;
     }
 
     .product-img {
@@ -64,6 +86,16 @@
     }
 
     .product-price {
-        font-size: 20px;
+        font-size: 26px;
+    }
+}
+
+@media (min-width: 1440px){
+    .product-container {
+        width: 800px;
+    }
+
+    .product-img {
+        width: 450px;
     }
 }

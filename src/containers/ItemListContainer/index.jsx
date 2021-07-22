@@ -6,25 +6,24 @@ import { ProductsContext } from '../../contexts/ProductsContext';
 export const ItemListContainer = () => {
     const { listProducts } = useContext(ProductsContext);
     const [brandProducts, setBrandProducts] = useState([]);
-    const { categories } = useParams();
+    const { brand } = useParams();
 
     useEffect (() => {
         const waitForData = () => {
-            let filterBrand = listProducts.results.filter(products => products.attributes[0].value_name === categories)
+            let filterBrand = listProducts.filter(products => products.brand === brand);
 
             const products = filterBrand.map(element => {
                 return {
                     id: element.id,
-                    title: element.title,
-                    brand: element.attributes[0].value_name,
+                    title: element.name,
                     price: element.price,
-                    img: element.thumbnail
+                    img: element.img
                 }
             })
             setBrandProducts(products);
         }
         waitForData();
-    }, [categories, listProducts]);
+    }, [brand, listProducts]);
     
     return (
         <section className='item-list'>

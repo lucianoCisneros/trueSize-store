@@ -16,7 +16,6 @@ export const Footer = () => {
                         <Link to={`/productos/Jordan`}><li className='item-link'>Jordan</li></Link>
                         <Link to={`/productos/Nike`}><li className='item-link'>Nike</li></Link>
                         <Link to={`/productos/Adidas`}><li className='item-link'>Adidas</li></Link>
-                        <Link to={`/productos/Vans`}><li className='item-link'>Vans</li></Link>
                     </ul>
 
                     <div>
@@ -31,8 +30,8 @@ export const Footer = () => {
                 <div className='footer-border'></div>
 
                 <div className='icons-container'>
-                    <i className='icon'><img src="/images/whatsapp.png" alt="Whatsapp" /></i>
-                    <i className='icon'><img src="/images/instagram.png" alt="Instagram" /></i>
+                    <i><img className='icon' src="/images/whatsapp.png" alt="Whatsapp" /></i>
+                    <i><img className='icon' src="/images/instagram.png" alt="Instagram" /></i>
                 </div>
 
             </div>
