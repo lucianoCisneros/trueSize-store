@@ -2,15 +2,23 @@ footer {
     background-color: black;
 }
 
+.footer-container {
+    display: inline-flex;
+}
+
 .title-link {
     color: white;
     border-bottom: 2px solid #D32B29;
+    width: 93px;
+    margin: 0 auto;
 }
 
 .item-link {
     color: white;
     text-align: left;
     transition: .3s;
+    margin: 0 auto;
+    width: 45px;
 }
 
 .item-link:hover {
@@ -40,7 +48,6 @@ footer {
     }
 
     .footer-container {
-        display: inline-flex;
         justify-content: space-around;
     }
 
@@ -50,6 +57,7 @@ footer {
 
     .title-link {
         margin-right: 15px;
+        width: auto;
     }
 
     .links-container {

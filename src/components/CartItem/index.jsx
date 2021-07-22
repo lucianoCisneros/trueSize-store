@@ -9,17 +9,17 @@ export const CartItem = ( {cartProduct, onQuitar} ) => {
 
   return (
     <div className='cartItem-container'>
-        <div>
+        <div className='cartItem-img-container'>
             <img className='cartItem-img' src={ cartProduct.itemList.img } alt="" />
         </div>
-        <div>
+        <div className='cartItem-data-container'>
             <h3 className='cartItem-title'>{ cartProduct.itemList.name }</h3>
             <div className='cartItem-data'>
               <p className='cartItem-quantity data'>Cantidad: {cartProduct.cantidad}</p>
               <p className='cartItem-price data'>Precio: ${cartProduct.itemList.price}</p>
               <p className='cartItem-subTotal data'>Subtotal: ${cartProduct.subTotal} </p>
             </div>
-            <button className='cartItem-delete' onClick={remove}>Eliminar</button>
+            <button className='cartItem-delete' onClick={remove}>Borrar</button>
         </div>
     </div>
   );
