@@ -43,9 +43,9 @@ export const CartContainer = () => {
                 <input type="text" placeholder='Nombre' onInput={(e) => {setName(e.target.value)}} />
                 <input type="tel" placeholder='Telefono' onInput={(e) => {setPhone(e.target.value)}} />
                 <input type="email" placeholder='Email' onInput={(e) => {setEmail(e.target.value)}} />
-
+                
                 <div>
-                  <button className='finish-order-button' onClick={() => cartContext.createOrder(name, phone, email)}>Confirmar</button>
+                  <button className='finish-order-button' onClick={ (e) => { e.preventDefault() ; cartContext.createOrder(name, phone, email) }}>Confirmar</button>
                   <button className='cancel-order-button'>Cancelar</button>
                 </div>
               </form>
