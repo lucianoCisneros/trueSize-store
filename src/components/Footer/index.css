@@ -60,6 +60,10 @@ footer {
         width: auto;
     }
 
+    .item-link {
+        width: auto;
+    }
+
     .links-container {
         display: inline-flex;
         margin-top: 20px;

@@ -1,4 +1,5 @@
 import { createContext, useEffect, useState } from "react";
+import { getFireStore } from '../../firebase/client';
 
 export const CartContext = createContext();
 
@@ -70,9 +71,24 @@ export const CartComponentContext = ({children}) => {
 
       }, [cart]);
 
+      const createOrder = ( name, email, phone ) => {
+        const order = {
+          buyer: {
+            name,
+            phone,
+            email
+          },
+          item: cart,
+          total: getTotal()
+        }
+
+        const DB = getFireStore();
+        DB.collection('orders').add(order);
+      }
+
     
     return (
-      <CartContext.Provider value={{ cart, cartCounter, addItem, deleteItem, deleteAll, getTotal}}>
+      <CartContext.Provider value={{ cart, cartCounter, addItem, deleteItem, deleteAll, getTotal, createOrder }}>
           {children}
       </CartContext.Provider>
     );

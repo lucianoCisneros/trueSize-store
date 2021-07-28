@@ -1,6 +1,6 @@
 .item {
     width: 280px;
-    height: 330px;
+    height: 345px;
     margin: 0 auto;
     margin-bottom: 40px;
     border-radius: 5px;
@@ -19,6 +19,7 @@
 .item-img {
     width: 230px;
     border-radius: 5px;
+    filter: drop-shadow(0 2px 2px rgba(0, 0, 0, 0.5));
 }
 
 .item-data-container {
@@ -31,6 +32,10 @@
 .item-title {
     font-size: 20px;
     font-weight: 400;
+    color: black;
+}
+
+.item-brand {
     color: black;
 }
 

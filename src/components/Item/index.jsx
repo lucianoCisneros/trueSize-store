@@ -1,7 +1,7 @@
 import './index.css';
 import { Link } from 'react-router-dom';
 
-export const Item = ({id, title, price, img}) => {
+export const Item = ({id, title, price, brand, img}) => {
 
     return (
         <>
@@ -14,6 +14,7 @@ export const Item = ({id, title, price, img}) => {
                     </div>
                     <div className='item-data-container'>
                         <p className='item-price'>${price}</p>
+                        <h3 className='item-brand'>{brand}</h3>
                         <h2 className='item-title'>{title}</h2>
                     </div>
                     </Link>

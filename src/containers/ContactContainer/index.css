@@ -1,14 +1,17 @@
 .contact-container {
-    background-color: #263238;
+    background-color: #37474f;
     padding: 50px 0 60px 0;
 }
 
 .contact-title {
-    color: white;
+    color: #263238;
     margin-bottom: 20px;
+    margin-top: 20px;
     border-bottom: 2px solid #D32B29;
-    filter: drop-shadow(0 4px 3px rgba(0, 0, 0, 1));
-    font-weight: 400;
+    font-weight: 600;
+    text-align: left;
+    margin-left: 20px;
+    margin-right: 20px;
 }
 
 form {
@@ -16,56 +19,79 @@ form {
     grid-template-columns: repeat(1, 1fr);
     width: 250px;
     margin: 0 auto;
+    background-color: white;
+    border-radius: 5px;
+    filter: drop-shadow(0 4px 3px rgba(0, 0, 0, 1));
 }
 
 input {
     border: none;
-    border-bottom: 2px solid white;
-    background-color: #263238;
+    background-color: #e0e0e0;
+    border-radius: 20px;
+    height: 40px;
     font-size: 16px;
     margin-bottom: 20px;
-    color: white;
+    color: black;
+    padding-left: 10px;
+    margin: 10px 10px 10px 10px;
+    filter: drop-shadow(0 2px 2px rgba(0, 0, 0, 0.5));
+}
+
+input::placeholder {
+    color: #616161;
+    font-weight: 300;
 }
 
 textarea {
     border: none;
-    border-bottom: 2px solid white;
-    background-color: #263238;
+    background-color: #e0e0e0;
+    border-radius: 20px;
     font-size: 16px;
     height: 120px;
-    width: 250px;
+    width: 235px;
+    margin: 0 auto;
+    margin-top: 10px;
     margin-bottom: 20px;
-    color: white;
+    color: black;
     resize: none;
+    padding-left: 10px;
+    padding-top: 10px;
+    filter: drop-shadow(0 2px 2px rgba(0, 0, 0, .5));
+}
+
+textarea::placeholder {
+    color: #616161;
+    font-weight: 300;
 }
 
 .button-container {
     display: grid;
     grid-template-columns: repeat(2, 1fr);
     margin-top: 10px;
+    margin-right: 30px;
+    margin-left: 30px;
 }
 
 .contact-button {
-    border: 2px solid white;
     color: white;
     cursor: pointer;
     height: 35px;
-    border-radius: 2px;
+    border-radius: 20px;
     background-color: #263238;
     margin-bottom: 20px;
     font-size: 16px;
     transition: .4s;
+    filter: drop-shadow(0 4px 3px rgba(0, 0, 0, 0.5));
+    border: none;
 }
 
 #delete:hover {
     background-color: #D32B29;
-    border: 2px solid #D32B29;
     transition: .4s;
 }
 
 #send:hover {
     background-color: #43a047;
-    border: 2px solid #43a047;
     transition: .4s;
 }
 
@@ -75,4 +101,34 @@ textarea {
 
 #delete {
     margin-left: 5px;
+}
+
+@media (min-width: 375px){
+    form {
+        width: 300px;
+    }
+
+    input {
+        margin-left: 20px;
+        margin-right: 20px;
+    }
+
+    textarea {
+        width: 250px;
+    }
+}
+
+@media (min-width: 425px){
+    form {
+        width: 350px;
+    }
+
+    input {
+        margin-left: 20px;
+        margin-right: 20px;
+    }
+
+    textarea {
+        width: 305px;
+    }
 }

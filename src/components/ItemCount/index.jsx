@@ -15,7 +15,28 @@ export const ItemCount = ({  initial, onAdd, onBuy }) => {
   }
 
   return (
-    <div>
+    <div className='count-container'>
+
+      <select className='product-size' name='size' id=''>
+        <option value='none' defaultValue>Talle</option>
+        <option value='us7'>US 7 = 25CM</option>
+        <option value='us7.5'>US 7.5 = 25.5CM</option>
+        <option value='us8'>US 8 = 26CM</option>
+        <option value='us8.5'>US 8.5 = 26.5CM</option>
+        <option value='us9'>US 9 = 27CM</option>
+        <option value='us9.5'>US 9.5 = 27.5CM</option>
+        <option value='us10'>US 10 = 28CM</option>
+        <option value='us10.5'>US 10.5 = 28.5CM</option>
+        <option value='us11'>US 11 = 29CM</option>
+        <option value='us12'>US 12 = 30CM</option>
+        <option value='none'>Talles Mujer</option>
+        <option value='us5.5'>US 5.5 = 22.5CM</option>
+        <option value='us6'>US 6 = 23CM</option>
+        <option value='us6.5'>US 6.5 = 23.5CM</option>
+        <option value='us7'>US 7 = 24CM</option>
+        <option value='us7.5'>US 7.5 = 24.5CM</option>
+        <option value='us8'>US 8 = 25CM</option>
+      </select>
 
       <div className='buttons-container'>
         <button className='button decrease' onClick={restar}>-</button>

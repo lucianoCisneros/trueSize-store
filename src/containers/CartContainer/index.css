@@ -1,6 +1,6 @@
 .cart-container {
     background-color: #263238;
-    min-height: 450px;
+    min-height: 1000px;
 }
 
 .cart-title {
@@ -24,8 +24,10 @@
     border: 2px solid white;
     color: white;
     cursor: pointer;
-    padding: 2px 20px 2px 20px;
-    border-radius: 2px;
+    height: 35px;
+    padding-left: 20px;
+    padding-right: 20px;
+    border-radius: 26px;
     font-size: 16px;
     margin-bottom: 20px;
     transition: .4s;
@@ -51,9 +53,71 @@
     margin-top: 20px;
 }
 
+/************FORM ORDER*************/
+
+.finish-order-container {
+    padding-bottom: 40px;
+}
+
+.order-form {
+    margin-top: 40px;
+    margin-bottom: 40px;
+}
+
+.finish-order {
+    text-align: left;
+    margin-left: 20px;
+    margin-right: 20px;
+    margin-bottom: 20px;
+    padding-top: 20px;
+    border-bottom: 2px solid #D32B29;
+    color: #263238;
+}
+
+.finish-order-button {
+    background-color: #263238;
+    color: white;
+    cursor: pointer;
+    height: 35px;
+    padding-left: 20px;
+    padding-right: 20px;
+    border-radius: 26px;
+    font-size: 16px;
+    transition: .4s;
+    margin-right: 20px;
+    margin-top: 20px;
+    margin-bottom: 20px;
+    border: none;
+    filter: drop-shadow(0 2px 2px rgba(0, 0, 0, 0.5));
+}
+
+.finish-order-button:hover {
+    background-color: #43a047;
+    transition: .4s;
+}
+
+.cancel-order-button {
+    background-color: #263238;
+    color: white;
+    cursor: pointer;
+    height: 35px;
+    padding-left: 20px;
+    padding-right: 20px;
+    border-radius: 26px;
+    font-size: 16px;
+    transition: .4s;
+    border: none;
+    filter: drop-shadow(0 2px 2px rgba(0, 0, 0, 0.5));
+}
+
+.cancel-order-button:hover {
+    background-color: #D32B29;
+    transition: .4s;
+}
+
 @media (min-width: 768px){
     .cart-container {
-        min-height: 500px;
+        min-height: 800px;
     }
 
     .cart-finish {
@@ -69,10 +133,6 @@
 }
 
 @media (min-width: 1440px){
-    .cart-container {
-        min-height: 600px;
-    }
-
     .cart-finish {
         margin-right: 280px;
     }

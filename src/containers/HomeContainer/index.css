@@ -35,7 +35,76 @@
     width: 75px;
 }
 
+/********BRANDS**********/
 
+.outstandings-brands {
+    background-color: #37474f;
+    padding-top: 20px;
+    padding-bottom: 10px;
+}
+
+.brand-adidas, .brand-jordan, .brand-nike {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin: 0 auto;
+    filter: drop-shadow(0 4px 3px rgba(0, 0, 0, 0.5));
+    transition: .4s;
+}
+
+.brand-jordan {
+    height: 250px;
+    width: 250px;
+    background-image: url(https://i.ibb.co/8cwVrTT/jordan1.jpg);
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center center;
+    position: relative;
+    margin-bottom: 20px;
+    margin-top: 40px;
+}
+
+.brand-jordan:hover {
+    filter: drop-shadow(0 3px 5px rgba(255, 255, 255, 1));
+    transition: .4s;
+}
+
+.brand-nike:hover {
+    filter: drop-shadow(0 3px 5px rgba(255, 255, 255, 1));
+    transition: .4s;
+}
+
+.brand-adidas:hover {
+    filter: drop-shadow(0 3px 5px rgba(255, 255, 255, 1));
+    transition: .4s;
+}
+
+.brand-nike {
+    height: 250px;
+    width: 250px;
+    background-image: url(https://i.ibb.co/x3hTz6P/af1.jpg);
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center center;
+    position: relative;
+    margin-bottom: 20px;
+}
+
+.brand-adidas {
+    height: 250px;
+    width: 250px;
+    background-image: url(https://i.ibb.co/27bp2B6/yeezy.jpg);
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center center;
+    position: relative;
+    margin-bottom: 40px;
+}
+
+.brand-title {
+    color: white;
+    filter: drop-shadow(0 4px 3px rgba(0, 0, 0, 1));
+}
 
 @media (min-width: 425px) {
     .banner {
@@ -44,6 +113,10 @@
 }
 
 @media (min-width: 768px) {
+    .outstandings-brands {
+        padding-top: 40px;
+    }
+
     .banner {
         height: 615px;
     }
@@ -75,6 +148,30 @@
     .aboutUs-data {
         font-size: 16px;
     }
+
+    /********BRANDS*********/
+
+    .outstandings-brands {
+        display: flex;
+        justify-content: center;
+    }
+
+    .brand-jordan {
+        width: 320px;
+        height: 320px;
+        margin-top: 0;
+        margin-right: 20px;
+    }
+
+    .brand-nike, .brand-adidas {
+        width: 150px;
+        height: 150px;
+    }
+
+    .brand-secondary {
+        display: flex;
+        flex-direction: column;
+    }
 }
 
 @media (min-width: 1024px) {
@@ -88,6 +185,16 @@
 
     .aboutUs-img {
         width: 85px;
+    }
+
+    .brand-jordan {
+        width: 350px;
+        height: 350px;
+    }
+
+    .brand-nike, .brand-adidas {
+        width: 165px;
+        height: 165px;
     }
 }
 
@@ -107,5 +214,15 @@
 
     .aboutUs-img {
         width: 100px;
+    }
+
+    .brand-jordan {
+        width: 400px;
+        height: 400px;
+    }
+
+    .brand-nike, .brand-adidas {
+        width: 190px;
+        height: 190px;
     }
 }
