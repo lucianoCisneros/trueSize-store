@@ -1,79 +1,97 @@
 .menu {
-    display: flex;
-    align-items: center;
-    height: 60px;
-    color: white;
-    text-align: center;
-    justify-content: space-between;
-    background-color: black;
-    height: 60px;
+  display: flex;
+  background-color: black;
+  height: 70px;
+  width: 100%;
 }
 
-.menu-items {
-    display: flex;
-    margin: 0 auto;
-}
-
-.menu-items li {
-    margin-right: 35px;
-    color: white;
-    font-weight: 500; 
-    transition: .4s;
-    font-size: 17px;
-}
-
-.menu-items li:hover {
-  color: #D32B29;
-  cursor: pointer;
-  transition: .4s;
+.menu-logo-container {
+  display: flex;
+  align-items: center;
 }
 
 .menu-logo {
-    width: 120px;
+  width: 150px;
+}
+
+.leftSide {
+  flex: 70%;
+  display: flex;
+  justify-content: left;
+  align-items: center;
+}
+
+.menu-items {
+  display: flex;
+  align-items: center;
+}
+
+.menu-item {
+  font-size: 17px;
+  margin-left: 15px;
+  color: white;
+}
+
+.rigthSide {
+  flex: 30%;
+  display: flex;
+  justify-content: flex-end;
+  align-items: center;
 }
 
 .menu-btn {
-    margin-right: 20px;
-    font-size: 25px;
-    color: white;
-    cursor: pointer;
-    display: none; 
+  display: none;
+  margin-right: 15px;
+  width: 30px;
+  cursor: pointer;
 }
 
-@media (max-width: 695px) {
-    .menu-btn {
-      display: inline-flex;
+#hidden {
+  display: flex;
+}
+
+@media (max-width: 790px){
+    .menu-item {
+      font-size: 16px;
     }
-    .menu-items {
-      position: absolute;
-      width: 100vw;
-      height: 100vh;
-      background: #414141;
-      top: -100vh;
-      text-align: center;
-      transition: all .4s;
-      flex-direction: column;
-      z-index: 900; 
-    }
-    .menu-items li {
-      margin: 50px 0 0 0; 
-    }
-    .menu-items li:hover, li.active {
-      border-bottom: 0; 
-    }
-    .menu-items li {
-      font-size: 20px;
-      color: #fff;
-      margin: 0; 
-    }
-    .menu-items li:hover {
-      color: #00bfff; 
-    }
-    li.active {
-      background-color: rgba(0, 0, 0, 0.3);
-      padding: 7px 13px; 
-    }
-    a.active {
-      border: 0px; 
-    } 
+}
+
+@media (max-width: 730px){
+  .menu-btn {
+    display: flex;
   }
+
+  .menu-items {
+    display: none;
+  }
+
+  .menu-item {
+    font-size: 19px;
+    margin-top: 20px;
+  }
+
+  #hidden {
+    position: absolute;
+    left: 0px;
+    top: 70px;
+    height: 220px;
+    width: 100%;
+    background-color: #080808;
+    z-index: 1;
+    display: flex;
+    flex-direction: column;
+  }
+}
+
+@media (min-width: 730px){
+  .menu-item {
+    height: 70px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+  }
+
+  .menu-item:hover {
+    border-bottom: 3px solid #D32B29;
+  }
+}
