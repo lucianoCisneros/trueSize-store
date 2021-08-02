@@ -13,7 +13,7 @@ export const CartComponentContext = ({children}) => {
           .indexOf(item.id);
       };
     
-      const addItem = ({ product, quantity }) => {
+      const addItem = ({ product, quantity, size }) => {
         if (isInCart(product) >= 0) {
           cart[isInCart(product)].cantidad += quantity;
           setCart([...cart]);
@@ -22,6 +22,7 @@ export const CartComponentContext = ({children}) => {
             {
               itemList: product,
               cantidad: quantity,
+              talle: size,
               subTotal: quantity * product.price
             },
           ]);

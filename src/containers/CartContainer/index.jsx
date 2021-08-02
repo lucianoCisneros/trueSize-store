@@ -46,7 +46,7 @@ export const CartContainer = () => {
                 
                 <div>
                   <button className='finish-order-button' onClick={ (e) => { e.preventDefault() ; cartContext.createOrder(name, phone, email) }}>Confirmar</button>
-                  <button className='cancel-order-button'>Cancelar</button>
+                  <button className='cancel-order-button' type='reset'>Cancelar</button>
                 </div>
               </form>
             </div>

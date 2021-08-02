@@ -2,22 +2,24 @@ import './index.css';
 import { ItemCount } from '../ItemCount';
 import { useState, useContext } from 'react';
 import { CartContext } from '../../contexts/CartContext';
-import { Link } from 'react-router-dom';
 
 export const ItemDetail = ({ product }) => {
     const cartContext = useContext(CartContext);
     const [count, setCount] = useState(0);
+    const [size, setSize] = useState('');
     const [buy, setBuy] = useState(null);
 
     function onBuy (buy){
         setBuy(buy);
     }
 
-    const onAdd = (cant) => {
+    const onAdd = (cant, size) => {
         setCount(cant)
+        setSize(size)
         const cart = {
         product,
-        quantity: cant
+        quantity: cant,
+        talle: size
         }
         cartContext.addItem(cart);
     };
@@ -31,7 +33,7 @@ export const ItemDetail = ({ product }) => {
                     <div className='secondary-container'>
                         <h2 className='product-title'>{product.name}</h2>
                         <p  className='product-price'>${product.price}</p>
-                        { buy ?  <Link to={`/carrito`}><button className='shop-button' >Terminar compra</button></Link>  : <ItemCount initial={1} onBuy={onBuy} onAdd={onAdd}/>}
+                        <ItemCount initial={1} onBuy={onBuy} onAdd={onAdd}/>
                     </div>
                 </div>
         </section>
