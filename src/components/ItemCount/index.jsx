@@ -18,7 +18,7 @@ export const ItemCount = ({  initial, onAdd }) => {
   return (
     <div className='count-container'>
 
-      <select className='product-size' name='size' onChange={e=> setSize(e.target.value)}>
+      <select className='product-size' name='size' onChange={(e) => setSize(e.target.value)}>
         <option value='none' defaultValue>Talle</option>
         <option value='us7'>US 7 = 25CM</option>
         <option value='us7.5'>US 7.5 = 25.5CM</option>
@@ -45,7 +45,7 @@ export const ItemCount = ({  initial, onAdd }) => {
         <button className='button increase' onClick={sumar}>+</button>
       </div>
 
-      <button className='add-to-cart' onClick={() => onAdd(count, size)}>Agregar al carrito</button>
+      <button className='add-to-cart' onClick={() => {onAdd(count, size); alert('Producto agregado satisfactoriamente!')}}>Agregar al carrito</button>
 
     </div>
   );

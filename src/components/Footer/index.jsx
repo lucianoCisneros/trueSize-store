@@ -30,8 +30,8 @@ export const Footer = () => {
                 <div className='footer-border'></div>
 
                 <div className='icons-container'>
-                    <i><img className='icon' src="/images/whatsapp.png" alt="Whatsapp" /></i>
-                    <i><img className='icon' src="/images/instagram.png" alt="Instagram" /></i>
+                    <a href="http://wa.me/541136873100?text=Hola,%20como%20estas?" target="_blank" rel="noopener noreferrer"><i><img className='icon' src="/images/whatsapp.png" alt="Whatsapp" /></i></a>
+                    <a href="https://www.instagram.com/truesize.store" target="_blank" rel="noopener noreferrer"><i><img className='icon' src="/images/instagram.png" alt="Instagram" /></i></a>
                 </div>
 
             </div>

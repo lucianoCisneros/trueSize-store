@@ -45,7 +45,7 @@ export const CartContainer = () => {
                 <input type="email" placeholder='Email' onInput={(e) => {setEmail(e.target.value)}} />
                 
                 <div>
-                  <button className='finish-order-button' onClick={ (e) => { e.preventDefault() ; cartContext.createOrder(name, phone, email) }}>Confirmar</button>
+                  <button className='finish-order-button' onClick={ (e) => { e.preventDefault() ; cartContext.createOrder(name, phone, email)}}>Confirmar</button>
                   <button className='cancel-order-button' type='reset'>Cancelar</button>
                 </div>
               </form>

@@ -28,7 +28,8 @@
 
 .menu-item {
   font-size: 17px;
-  margin-left: 15px;
+  padding: 0 5px 0 5px;
+  margin-right: 5px;
   color: white;
 }
 
@@ -93,5 +94,6 @@
 
   .menu-item:hover {
     border-bottom: 3px solid #D32B29;
+    padding-top: 3px;
   }
 }

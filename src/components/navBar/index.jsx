@@ -7,7 +7,7 @@ export const NavBar = () => {
     const [ showItems, setShowItems ] = useState(false);
 
     return (
-      <div className="NavBar">
+      <>
         <nav className="menu">
 
           <div className='leftSide'>
@@ -32,6 +32,6 @@ export const NavBar = () => {
           </div>
 
         </nav>
-      </div>
+      </>
     )
 }

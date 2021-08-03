@@ -19,7 +19,7 @@
 .texto {
     text-align: left;
     color: white;
-    margin: 0px 20px 15px 20px;
+    margin: 20px 20px 15px 20px;
     font-weight: 400;
 }
 
@@ -62,10 +62,14 @@
     .container-content {
         display: inline-flex;
     }
+
+    .title-howToBuy {
+        margin-top: 30px;
+    }
     
     .texto {
         color: white;
-        margin: 5px 30px 15px 30px;
+        margin: 20px 30px 50px 30px;
     }
 
     .logo {
@@ -76,14 +80,9 @@
 }
 
 @media (min-width: 1024px){
-    .container-content {
-        height: 450px;
-        padding-top: 60px;
-    }
-    
     .texto {
         font-size: 18px;
-        margin: 5px 40px 0 40px;
+        margin: 20px 40px 50px 40px;
     }
 
     .logo {
@@ -100,13 +99,12 @@
     }
 
     .container-content {
-        height: 570px;
         padding: 90px 0 20px 0;
     }
     
     .texto {
         font-size: 20px;
-        margin: 5px 60px 0 60px;
+        margin: 20px 60px 90px 60px;
     }
 
     .logo {
