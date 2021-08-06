@@ -87,9 +87,24 @@ export const CartComponentContext = ({children}) => {
         DB.collection('orders').add(order);
       }
 
+      const createQuestion = ( name, lastName , email, phone, question) => {
+        const consultation = {
+          user: {
+            name,
+            lastName,
+            email,
+            phone,
+            question
+          }
+        }
+
+        const DB = getFireStore();
+        DB.collection('questions').add(consultation);
+      }
+
     
     return (
-      <CartContext.Provider value={{ cart, cartCounter, addItem, deleteItem, deleteAll, getTotal, createOrder }}>
+      <CartContext.Provider value={{ cart, cartCounter, addItem, deleteItem, deleteAll, getTotal, createOrder, createQuestion }}>
           {children}
       </CartContext.Provider>
     );
