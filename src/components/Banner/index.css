@@ -1,0 +1,73 @@
+.banner {
+    background-image: url(https://i.ibb.co/vJmCSzJ/banner.jpg);
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center center;
+    position: relative;
+    height: 490px;
+    text-align: right;
+}
+
+.title {
+    padding-top: 455px;
+    font-weight: 600;
+}
+
+.sub-title {
+    font-weight: 500;
+}
+
+.title, .sub-title {
+    color:black;
+    display: none;
+    margin-right: 65px;
+}
+
+@media (min-width: 425px) {
+    .banner {
+        height: 510px;
+    }
+}
+
+@media (min-width: 768px) {
+    .banner {
+        height: 615px;
+    }
+
+    .title {
+        font-size: 35px;
+    }
+
+    .sub-title {
+        font-size: 24px;
+    }
+    
+    .title, .sub-title {
+        display: block;
+    }
+}
+
+@media (min-width: 1024px) {
+    .title {
+        font-size: 40px;
+    }
+
+    .sub-title {
+        font-size: 29px;
+    }
+}
+
+@media (min-width: 1440px){
+    .banner {
+        height: 770px;
+    }
+
+    .title {
+        font-size: 45px;
+        padding-top: 150px;
+    }
+
+    .sub-title {
+        font-size: 34px;
+    }
+}

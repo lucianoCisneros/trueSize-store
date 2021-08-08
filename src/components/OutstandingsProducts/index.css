@@ -1,0 +1,9 @@
+.outstandingProducts-title {
+    color: black;
+    width: 206px;
+    margin: 0 auto;
+    margin-top: 20px;
+    margin-bottom: 20px;
+    border-bottom: 2px solid #D32B29;
+    font-weight: 600;
+}

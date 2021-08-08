@@ -1,0 +1,41 @@
+.aboutUs-container {
+    margin: 20px 0 20px 0;
+}
+
+.aboutUs-item {
+    margin: 30px 0 30px 0;
+}
+
+.aboutUs-img {
+    width: 75px;
+}
+
+@media (min-width: 768px) {
+    .aboutUs-container {
+        display: grid;
+        grid-template-columns: repeat(3, 1fr);
+    }
+
+    .aboutUs-item {
+        width: 150px;
+        margin: 0 auto;
+        margin-top: 30px;
+        margin-bottom: 30px;
+    }
+
+    .aboutUs-data {
+        font-size: 16px;
+    }
+}
+
+@media (min-width: 1024px) {
+    .aboutUs-img {
+        width: 85px;
+    }
+}
+
+@media (min-width: 1440px){
+    .aboutUs-img {
+        width: 100px;
+    }
+}
