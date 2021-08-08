@@ -27,7 +27,7 @@ export const NavBar = () => {
           <div className='rigthSide'>
             <CartWidget />
             <i onClick={ () => setShowItems(!showItems) }>
-              <img src="/images/menu.png" className='menu-btn' alt="" />
+              <img src="/images/menu.png" className='menu-btn' alt="Menu hamburguesa" />
             </i>
           </div>
 

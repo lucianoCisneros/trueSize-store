@@ -9,7 +9,7 @@ export const CartItem = ( {cartProduct, onQuitar} ) => {
   return (
     <div className='cartItem-container'>
         <div className='cartItem-img-container'>
-            <img className='cartItem-img' src={ cartProduct.itemList.img } alt="" />
+            <img className='cartItem-img' src={ cartProduct.itemList.img } alt="Producto" />
         </div>
         <div className='cartItem-data-container'>
             <h3 className='cartItem-title'>{ cartProduct.itemList.name }</h3>
