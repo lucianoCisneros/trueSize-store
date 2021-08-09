@@ -13,7 +13,7 @@ export const NavBar = () => {
           <div className='leftSide'>
 
             <div className='menu-logo-container'>
-              <Link to={`/`}><img src="/images/LogoWeb.png" className="menu-logo" alt="Logo" /></Link>
+              <Link to={`/`}><img src="https://i.ibb.co/zfgFntF/LogoWeb.png" className="menu-logo" alt="Logo" /></Link>
             </div>
             
             <ul className="menu-items" id={ showItems ? 'hidden' : '' }>
@@ -27,7 +27,7 @@ export const NavBar = () => {
           <div className='rigthSide'>
             <CartWidget />
             <i onClick={ () => setShowItems(!showItems) }>
-              <img src="/images/menu.png" className='menu-btn' alt="Menu hamburguesa" />
+              <img src="https://i.ibb.co/47F8tGd/menu.png" className='menu-btn' alt="Menu hamburguesa" />
             </i>
           </div>
 

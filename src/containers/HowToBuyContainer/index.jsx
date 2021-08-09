@@ -14,7 +14,7 @@ export const HowToBuyContainer = () => {
                     y muchas más...</p>
                 </div>
                 <div>
-                    <img src="/images/logo.png" className='logo' alt="LogoTrueSize" />
+                    <img src="https://i.ibb.co/s3d4cPV/logo.png" className='logo' alt="LogoTrueSize" />
                 </div>
             </div>
         </section>

@@ -34,11 +34,11 @@ export const ItemDetail = ({ product }) => {
                         <h2 className='product-title'>{product.name}</h2>
                         <p  className='product-price'>${product.price}</p>
                         <div className='shipping-container'>
-                            <img className='shipping-img' src="/images/paquete.png" alt="Envio" />
+                            <img className='shipping-img' src="https://i.ibb.co/r66cwgy/paquete.png" alt="Envio" />
                             <p className='shipping-text'>Envío gratis</p>
                         </div>
                         <div className='shipping-container'>
-                            <img className='shipping-img' src="/images/pagos.png" alt="Tarjeta" />
+                            <img className='shipping-img' src="https://i.ibb.co/RPQ582w/pagos.png" alt="Tarjeta" />
                             <p className='shipping-text'>Mercago Pago - Transferencia Bancaria - Efectivo</p>
                         </div>
                         <ItemCount initial={1} onBuy={onBuy} onAdd={onAdd}/>

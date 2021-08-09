@@ -10,7 +10,7 @@ export const CartWidget = () => {
       <>
         <Link to={`/carrito`}>
           <div className='cartWidget-container'>
-            <i><img className="cart" src="/images/carrito.png" alt="Carrito" /></i>
+            <i><img className="cart" src="https://i.ibb.co/0t0cmBc/carrito.png" alt="Carrito" /></i>
             <p className='cart-counter'>{ cartContext.cart.length }</p>
           </div>
         </Link>
