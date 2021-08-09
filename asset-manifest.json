@@ -1,0 +1,22 @@
+{
+  "files": {
+    "main.css": "/trueSize-store/static/css/main.b08c1609.chunk.css",
+    "main.js": "/trueSize-store/static/js/main.a467e79d.chunk.js",
+    "main.js.map": "/trueSize-store/static/js/main.a467e79d.chunk.js.map",
+    "runtime-main.js": "/trueSize-store/static/js/runtime-main.8df47731.js",
+    "runtime-main.js.map": "/trueSize-store/static/js/runtime-main.8df47731.js.map",
+    "static/js/2.d5386e75.chunk.js": "/trueSize-store/static/js/2.d5386e75.chunk.js",
+    "static/js/2.d5386e75.chunk.js.map": "/trueSize-store/static/js/2.d5386e75.chunk.js.map",
+    "static/js/3.2766c893.chunk.js": "/trueSize-store/static/js/3.2766c893.chunk.js",
+    "static/js/3.2766c893.chunk.js.map": "/trueSize-store/static/js/3.2766c893.chunk.js.map",
+    "index.html": "/trueSize-store/index.html",
+    "static/css/main.b08c1609.chunk.css.map": "/trueSize-store/static/css/main.b08c1609.chunk.css.map",
+    "static/js/2.d5386e75.chunk.js.LICENSE.txt": "/trueSize-store/static/js/2.d5386e75.chunk.js.LICENSE.txt"
+  },
+  "entrypoints": [
+    "static/js/runtime-main.8df47731.js",
+    "static/js/2.d5386e75.chunk.js",
+    "static/css/main.b08c1609.chunk.css",
+    "static/js/main.a467e79d.chunk.js"
+  ]
+}
