@@ -1,8 +1,8 @@
 {
   "files": {
     "main.css": "/trueSize-store/static/css/main.b08c1609.chunk.css",
-    "main.js": "/trueSize-store/static/js/main.e7df7054.chunk.js",
-    "main.js.map": "/trueSize-store/static/js/main.e7df7054.chunk.js.map",
+    "main.js": "/trueSize-store/static/js/main.0ead57e7.chunk.js",
+    "main.js.map": "/trueSize-store/static/js/main.0ead57e7.chunk.js.map",
     "runtime-main.js": "/trueSize-store/static/js/runtime-main.8df47731.js",
     "runtime-main.js.map": "/trueSize-store/static/js/runtime-main.8df47731.js.map",
     "static/js/2.d5386e75.chunk.js": "/trueSize-store/static/js/2.d5386e75.chunk.js",
@@ -17,6 +17,6 @@
     "static/js/runtime-main.8df47731.js",
     "static/js/2.d5386e75.chunk.js",
     "static/css/main.b08c1609.chunk.css",
-    "static/js/main.e7df7054.chunk.js"
+    "static/js/main.0ead57e7.chunk.js"
   ]
 }
