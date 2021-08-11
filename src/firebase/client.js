@@ -2,12 +2,12 @@ import firebase from 'firebase/app';
 import '@firebase/firestore';
 
 const firebaseConfig = firebase.initializeApp({
-    apiKey: "AIzaSyA-1RpqmD1mCBn8arCHvHCb7Bc05TmfxOU",
-    authDomain: "truesize-store.firebaseapp.com",
-    projectId: "truesize-store",
-    storageBucket: "truesize-store.appspot.com",
-    messagingSenderId: "1069310409024",
-    appId: "1:1069310409024:web:dd096448707570632562a5"
+    apiKey: "AIzaSyAn7ncpG3evMurGC7lFo3jDvvIRHS2nWNk",
+    authDomain: "true-size-store.firebaseapp.com",
+    projectId: "true-size-store",
+    storageBucket: "true-size-store.appspot.com",
+    messagingSenderId: "746037080664",
+    appId: "1:746037080664:web:e2d13bb34d8b5d8848d02d"
 });
 
 export const getFirebase = () => {
