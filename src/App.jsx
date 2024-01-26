@@ -1,5 +1,5 @@
 import { BrowserRouter, Route, Switch } from 'react-router-dom';
-import { NavBar } from './components/navBar/index';
+import { NavBar } from './components/NavBar';
 import { Footer } from './components/Footer';
 import { HomeContainer } from './containers/HomeContainer';
 import { ItemListContainer } from './containers/ItemListContainer'
