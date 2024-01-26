@@ -1,9 +1,7 @@
-/********BRANDS**********/
-
 .outstandings-brands {
     background-color: #37474f;
     padding-top: 20px;
-    padding-bottom: 10px;
+    padding-bottom: 20px;
 }
 
 .brand-adidas, .brand-jordan, .brand-nike {
@@ -13,18 +11,7 @@
     margin: 0 auto;
     filter: drop-shadow(0 4px 3px rgba(0, 0, 0, 0.5));
     transition: .4s;
-}
-
-.brand-jordan {
-    height: 250px;
-    width: 250px;
-    background-image: url(https://i.ibb.co/8cwVrTT/jordan1.jpg);
-    background-size: cover;
-    background-repeat: no-repeat;
-    background-position: center center;
-    position: relative;
-    margin-bottom: 20px;
-    margin-top: 40px;
+    border-radius: 2px;
 }
 
 .brand-jordan:hover {
@@ -40,6 +27,18 @@
 .brand-adidas:hover {
     filter: drop-shadow(0 3px 5px rgba(255, 255, 255, 1));
     transition: .4s;
+}
+
+.brand-jordan {
+    height: 250px;
+    width: 250px;
+    background-image: url(https://i.ibb.co/8cwVrTT/jordan1.jpg);
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center center;
+    position: relative;
+    margin-bottom: 20px;
+    margin-top: 40px;
 }
 
 .brand-nike {
@@ -71,7 +70,8 @@
 
 @media (min-width: 768px) {
     .outstandings-brands {
-        padding-top: 40px;
+        padding-top: 60px;
+        padding-bottom: 20px;
     }
 
     .banner {

@@ -1,23 +1,22 @@
-import './index.css';
 import { useState } from 'react';
+import './index.css';
 
 export const ItemCount = ({  initial, onAdd }) => {
-  let [count, setCount] = useState(initial);
-  let [size, setSize] = useState('');
+  const [count, setCount] = useState(initial);
+  const [size, setSize] = useState('');
 
   const sumar = () => {
     setCount(count + 1);
-  }
+  };
 
   const restar = () => {
     if (count > 1) {
       setCount(count - 1);
     }
-  }
+  };
 
   return (
     <div className='count-container'>
-
       <select className='product-size' name='size' onChange={(e) => setSize(e.target.value)}>
         <option value='none' defaultValue>Talle</option>
         <option value='us7'>US 7 = 25CM</option>
@@ -38,15 +37,12 @@ export const ItemCount = ({  initial, onAdd }) => {
         <option value='us7.5'>US 7.5 = 24.5CM</option>
         <option value='us8'>US 8 = 25CM</option>
       </select>
-
       <div className='buttons-container'>
         <button className='button decrease' onClick={restar}>-</button>
         <span className='counter'>{count}</span>
         <button className='button increase' onClick={sumar}>+</button>
       </div>
-
       <button className='add-to-cart' onClick={() => {onAdd(count, size); alert('Producto agregado satisfactoriamente!')}}>Agregar al carrito</button>
-
     </div>
   );
-}
+};
