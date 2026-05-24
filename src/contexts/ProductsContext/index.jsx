@@ -1,39 +1,37 @@
 import { createContext, useEffect, useState } from 'react';
-import { getFireStore } from '../../firebase/client';
+import { collection, getDocs } from 'firebase/firestore';
+import { db } from '../../firebase/client';
 
 export const ProductsContext = createContext();
 
-export const ProductsComponentContext = ({children}) => {
-	const [listProducts, setListProducts] = useState([]);
-	const [OutstandingProduct, setOutstandingProduct] = useState([]);
+const mapSnapshot = (response) =>
+  response.docs.map((element) => ({ id: element.id, ...element.data() }));
 
-	useEffect(() => {
-		const DB = getFireStore();
-		const COLLECTION = DB.collection('products');
+export const ProductsComponentContext = ({ children }) => {
+  const [listProducts, setListProducts] = useState([]);
+  const [OutstandingProduct, setOutstandingProduct] = useState([]);
 
-		COLLECTION.get().then(response => {
-			if(response.size === 0){
-				console.log('No hay resultado en la base de datos!');
-			};
-			setListProducts(response.docs.map(element => {return {id: element.id, ...element.data()}}));
-		});
-	}, []);
+  useEffect(() => {
+    getDocs(collection(db, 'products')).then((response) => {
+      if (response.size === 0) {
+        console.log('No hay resultado en la base de datos!');
+      }
+      setListProducts(mapSnapshot(response));
+    });
+  }, []);
 
-	useEffect(() => {
-		const DB = getFireStore();
-		const COLLECTION = DB.collection('OutstandingsProducts');
+  useEffect(() => {
+    getDocs(collection(db, 'OutstandingsProducts')).then((response) => {
+      if (response.size === 0) {
+        console.log('No hay resultado en la base de datos!');
+      }
+      setOutstandingProduct(mapSnapshot(response));
+    });
+  }, []);
 
-		COLLECTION.get().then(response => {
-			if(response.size === 0){
-				console.log('No hay resultado en la base de datos!');
-			};
-			setOutstandingProduct(response.docs.map(element => {return {id: element.id, ...element.data()}}));
-		});
-	}, []);
-	
-	return (
-		<ProductsContext.Provider value={{ listProducts, OutstandingProduct }}>
-			{children}
-		</ProductsContext.Provider>
-	);
+  return (
+    <ProductsContext.Provider value={{ listProducts, OutstandingProduct }}>
+      {children}
+    </ProductsContext.Provider>
+  );
 };

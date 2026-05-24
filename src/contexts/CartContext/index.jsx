@@ -1,24 +1,24 @@
 import { createContext, useEffect, useState } from 'react';
-import { getFireStore } from '../../firebase/client';
+import { addDoc, collection } from 'firebase/firestore';
+import { db } from '../../firebase/client';
 
 export const CartContext = createContext();
 
-export const CartComponentContext = ({children}) => {
+export const CartComponentContext = ({ children }) => {
   const [cart, setCart] = useState([]);
   const [cartCounter, setCartCounter] = useState(0);
 
   const isInCart = (item) => {
-    return cart
-      .map((element) => element.itemList.id)
-      .indexOf(item.id);
+    return cart.map((element) => element.itemList.id).indexOf(item.id);
   };
-  
+
   const addItem = ({ product, quantity, talle }) => {
     if (isInCart(product) >= 0) {
       cart[isInCart(product)].cantidad += quantity;
       setCart([...cart]);
     } else {
-      setCart([...cart,
+      setCart([
+        ...cart,
         {
           itemList: product,
           cantidad: quantity,
@@ -26,20 +26,20 @@ export const CartComponentContext = ({children}) => {
           subTotal: quantity * product.price,
         },
       ]);
-    };
+    }
   };
 
   const deleteItem = (id) => {
-    let array = [...cart];
-    let index = array.findIndex(element => element.itemList.id === id);
+    const array = [...cart];
+    const index = array.findIndex((element) => element.itemList.id === id);
 
     if (index !== -1) {
       array.splice(index, 1);
       setCart([...array]);
-    };
+    }
   };
 
-  const deleteAll = () =>{
+  const deleteAll = () => {
     setCart([]);
   };
 
@@ -52,11 +52,11 @@ export const CartComponentContext = ({children}) => {
 
     if (cartMemory && cartMemory.length !== 0) {
       setCart(cartMemory);
-    };
+    }
   };
 
   const getTotal = () => {
-    return cart.map(element => element.subTotal).reduce((a,b) => a + b, 0);
+    return cart.map((element) => element.subTotal).reduce((a, b) => a + b, 0);
   };
 
   useEffect(() => {
@@ -84,11 +84,10 @@ export const CartComponentContext = ({children}) => {
       total: getTotal(),
     };
 
-    const DB = getFireStore();
-    DB.collection('orders').add(order);
+    addDoc(collection(db, 'orders'), order);
   };
 
-  const createQuestion = (name, lastName , email, phone, question) => {
+  const createQuestion = (name, lastName, email, phone, question) => {
     const consultation = {
       user: {
         name,
@@ -96,15 +95,25 @@ export const CartComponentContext = ({children}) => {
         email,
         phone,
         question,
-      }
+      },
     };
 
-    const DB = getFireStore();
-    DB.collection('questions').add(consultation);
+    addDoc(collection(db, 'questions'), consultation);
   };
-    
+
   return (
-    <CartContext.Provider value={{ cart, cartCounter, addItem, deleteItem, deleteAll, getTotal, createOrder, createQuestion }}>
+    <CartContext.Provider
+      value={{
+        cart,
+        cartCounter,
+        addItem,
+        deleteItem,
+        deleteAll,
+        getTotal,
+        createOrder,
+        createQuestion,
+      }}
+    >
       {children}
     </CartContext.Provider>
   );
